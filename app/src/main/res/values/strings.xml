@@ -4,4 +4,5 @@
     <string name="retry">Retry</string>
     <string name="results">Results Could not Be load</string>
     <string name="no_results_found_for_this_query">No Results Found For This Query</string>
+    <string name="results_could_not_be_loaded">Results Could not be loaded</string>
 </resources>

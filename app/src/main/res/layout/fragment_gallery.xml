@@ -36,7 +36,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/button_retry"
         android:layout_centerHorizontal="true"
-        android:text="@string/results" />
+        android:text="@string/results"
+        android:visibility="gone"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/text_view_empty"

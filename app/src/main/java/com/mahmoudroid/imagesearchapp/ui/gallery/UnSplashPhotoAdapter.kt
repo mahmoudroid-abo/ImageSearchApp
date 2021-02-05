@@ -1,5 +1,6 @@
 package com.mahmoudroid.imagesearchapp.ui.gallery
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
@@ -14,6 +15,7 @@ import com.mahmoudroid.imagesearchapp.databinding.ItemUnsplashPhotoBinding
 class UnSplashPhotoAdapter :
     PagingDataAdapter<UnSplashPhoto, UnSplashPhotoAdapter.PhotoViewHolder>(PHOTO_COMPARATOR) {
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoViewHolder {
         val binding =
             ItemUnsplashPhotoBinding.inflate(
@@ -26,6 +28,7 @@ class UnSplashPhotoAdapter :
         val currentItem = getItem(position)
         if (currentItem != null) {
             holder.bind(currentItem)
+            Log.d("MYTest", "onBindViewHolder: " + currentItem.id)
         }
     }
 
@@ -43,6 +46,7 @@ class UnSplashPhotoAdapter :
                     .into(imageView)
 
                 textViewUserName.text = photo.user.username
+
             }
         }
     }
@@ -56,6 +60,7 @@ class UnSplashPhotoAdapter :
             override fun areContentsTheSame(oldItem: UnSplashPhoto, newItem: UnSplashPhoto) =
                 oldItem == newItem
         }
+
     }
 
 }
