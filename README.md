@@ -4,7 +4,8 @@ Image Search APP
 This Project consumes The UnSplash API to Search and Display Photos, Display the User Account who submitted the Photo.
 
 # Please Note
-- Put Your Own API Access Key From Here https://unsplash.com/documentation , Register As A developer and Get Your Free Access Key. 
+- Put Your Own API Access Key From Here https://unsplash.com/documentation , Register As a developer and Get Your Free Access Key.
+- In Android Studio Go To -> gradel.propertise then change "unsplash_access_key" To your new One.
 
 ## Features and Libraries:
  
